@@ -1,16 +1,12 @@
-# Sentiment Analysis of Reviews
+# H&S Sentiment Analysis
 
-This project implements a sentiment analysis model that classifies reviews as **positive** or **negative**. It uses natural language processing (NLP) techniques to analyze text and determine sentiment.
+This project performs sentiment analysis on H&S (Head & Shoulders) consumer reviews using NLP techniques.
 
+## Features
+- Text cleaning
+- Sentiment polarity scoring using TextBlob
+- Visual representation of sentiment distribution
 
-This project is an implementation of a sentiment analysis model that classifies textual data (reviews) as either positive or negative. It leverages machine learning algorithms and NLP techniques to determine the sentiment of a given review.
-
-
-Input: "I loved this product!"
-Prediction: Positive
-
-
-Input: "Terrible experience, would not recommend."
-Prediction: Negative
-
-
+## How to Run
+1. Install dependencies:
+2. Open the notebook:
