@@ -10,3 +10,6 @@ This project performs sentiment analysis on H&S (Head & Shoulders) consumer revi
 ## How to Run
 1. Install dependencies:
 2. Open the notebook:
+
+## Requirements
+See `requirements.txt`
