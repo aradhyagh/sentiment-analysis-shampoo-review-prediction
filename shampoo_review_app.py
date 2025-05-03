@@ -13,9 +13,16 @@ import re
 from nltk.tokenize import TreebankWordTokenizer
 from nltk.corpus import stopwords
 
-# Load model and vectorizer
-model = joblib.load("model/sentiment_model.pkl")
-vectorizer = joblib.load("model/vectorizer.pkl")
+# Create 'model' folder if it doesn't exist
+os.makedirs("model", exist_ok=True)
+
+# Save model
+with open("model/sentiment_model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+# Save vectorizer
+with open("model/vectorizer.pkl", "wb") as f:
+    pickle.dump(vectorizer, f)
 
 # Preprocessing
 tokenizer = TreebankWordTokenizer()
