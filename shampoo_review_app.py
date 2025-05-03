@@ -13,12 +13,13 @@ import re
 from nltk.tokenize import TreebankWordTokenizer
 from nltk.corpus import stopwords
 
-# Create 'model' folder if it doesn't exist
-os.makedirs("model", exist_ok=True)
+import pickle
 
-# Save model
-with open("model/sentiment_model.pkl", "wb") as f:
-    pickle.dump(model, f)
+with open("model/sentiment_model.pkl", "rb") as f:
+    model = pickle.load(f)
+
+with open("model/vectorizer.pkl", "rb") as f:
+    vectorizer = pickle.load(f)
 
 # Save vectorizer
 with open("model/vectorizer.pkl", "wb") as f:
