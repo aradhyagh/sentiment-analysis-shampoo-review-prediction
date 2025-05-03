@@ -15,15 +15,11 @@ from nltk.corpus import stopwords
 
 import pickle
 
-with open("model/sentiment_model.pkl", "rb") as f:
+with open("sentiment_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("model/vectorizer.pkl", "rb") as f:
+with open("vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
-
-# Save vectorizer
-with open("model/vectorizer.pkl", "wb") as f:
-    pickle.dump(vectorizer, f)
 
 # Preprocessing
 tokenizer = TreebankWordTokenizer()
