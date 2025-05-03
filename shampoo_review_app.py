@@ -12,6 +12,9 @@ import joblib
 import re
 from nltk.tokenize import TreebankWordTokenizer
 from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
+
 
 import pickle
 
